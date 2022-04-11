@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!----------------------------Start Navbar section------------------------------------------------>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Recipes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center my-4 px-2">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" aria-current="page">pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">pasta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">pepper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">mushrooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">beetroot</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">lettuce</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">red pepper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">sweet potato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">radish</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">oregano</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">schickpea</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger">lentil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------End Navbar section------------------------------------------------>
+
+
+
+    <!----------------------------Start Owl-carosule section------------------------------------------------>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="owlTitle">Best <span class="TitleMeals">Meals</span></h1>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="images/1.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="images/2.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="images/3.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="images/4.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="images/5.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="images/6.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="images/7.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="images/8.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="images/9.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="images/10.jpg" class="w-100" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------End Owl-carosule section------------------------------------------------>
+
+    <!----------------------------Start Meal List Content section------------------------------------------------>
+
+    <div class="container text-center my-5">
+        <div id="alertpage" class="alert alert-danger d-none">
+            <p>page not found</p>
+        </div>
+        <div class="title text-center  d-flex justify-content-center">
+            <h1 class=" mealTitle">Recipes Meals Lists</h1>
+
+        </div>
+        <div id="rowRecipes" class="row">
+        </div>
+    </div>
+    <!--  -->
+    <!----------------------------Start Modal Meal Details section------------------------------------------------>
+
+    <div class="modal fade" id="recipesDetailsModal" tabindex="-1" aria-labelledby="recipesDetailsLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="recipesDetailsLabel">Recipes Details</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="recipesDetails" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------End Modal Meal Details section------------------------------------------------>
+
+    <!----------------------------End Meal List Content section------------------------------------------------>
+    <!----------------------------Start Footer section------------------------------------------------>
+
+    <footer class="bg-dark pt-4 pb-3 ">
+        <div class="container text-white text-center ">
+            <div class="row ">
+                <div class="col-md-7 text-center ">
+                    <p>Copyright <i class="Copyright fa fa-copyright "></i>March 2022 All Rights Reseved by
+                        <a class="myNames text-decoration-none ">Taher Salah</a>
+                    </p>
+                </div>
+                <div class="col-md-4 ">
+                    <ul class="list-unstyled ">
+                        <a class="text-decoration-none" href="https://www.facebook.com/taher.salah.7927 " target="_blank ">
+                            <li class="socialMe list-inline-item "><i class="fab1 fab fa-facebook "></i></li>
+                        </a>
+                        <a class="text-decoration-none" href="https://www.instagram.com/tahersalahm/ " target="_blank ">
+                            <li class="socialMe list-inline-item "><i class="fab2 fab fa-instagram "></i></li>
+                        </a>
+                        <a class="text-decoration-none" href="https://www.linkedin.com/in/taher-salah-1a5622134/ " target="_blank ">
+                            <li class="socialMe list-inline-item "><i class="fab3 fab fa-linkedin "></i></li>
+                        </a>
+                        <a class="text-decoration-none" href=" " target="_blank ">
+                            <li class="socialMe list-inline-item "><i class="fab4 fab fa-twitter "></i></li>
+                        </a>
+                        <a class="text-decoration-none" href="https://github.com/TaherSalah " target="_blank ">
+                            <li class="socialMe list-inline-item "><i class="fab5 fab fa-github "></i></li>
+                        </a>
+                        <a class="text-decoration-none" href="# ">
+                            <li class="socialMe list-inline-item "><i class="fab6 fab fa-google "></i></li>
+                        </a>
+                        <a class="text-decoration-none" href="https://api.whatsapp.com/send/?phone=01094529752&text&app_absent=0 " target="_blank ">
+                            <li class="socialMe list-inline-item "><i class="fab7 fab fa-whatsapp "></i></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------End Footer section------------------------------------------------>
+    <!----------------------------Start JS links------------------------------------------------>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <!----------------------------Start JS links------------------------------------------------>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+/************************************************ Start Links Google Fonts*******************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/************************************************ End Links Google Fonts*******************************/
+
+
+/********************************************************* Start nav  Sction***********************************************************/
+
+h3 a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Montserrat" !important;
+}
+
+.navbar-brand img {
+    width: 10rem;
+}
+
+.navActive {
+    background-color: beige;
+    border-radius: 20%;
+}
+
+.navbar-brand {
+    color: brown !important;
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    letter-spacing: 10px;
+}
+
+ul li a {
+    transition: all 0.5s linear;
+    color: #fff !important;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 600;
+    margin-bottom: 15px !important;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 10px !important;
+}
+
+ul li a:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 10px;
+    background-color: #fff;
+    transition: width 0.35s ease-in;
+}
+
+ul li a:hover::before {
+    width: 75%;
+    background: rgb(140, 43, 185);
+}
+
+
+/********************************************************* End nav  Sction***********************************************************/
+
+
+/**************************************************** Start Meal List Styling  ******************************************************/
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280250, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.owl-carousel img {
+    height: 470px;
+    width: 100%;
+}
+
+.owlTitle {
+    margin-top: 97px !important;
+    text-align: center;
+    font-size: 90px !important;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 10px;
+}
+
+.TitleMeals {
+    color: blueviolet;
+}
+
+.mealTitle {
+    font-size: 70px;
+    margin-top: 123px;
+    padding-bottom: 18px;
+    font-family: 'Rubik Wet Paint', cursive;
+    position: relative;
+    max-width: 60%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mealTitle::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgba(61, 8, 253, 0.459);
+    transition: width .80s ease-out;
+}
+
+.mealTitle:hover::before {
+    width: 100%;
+    background-image: linear-gradient(to right, green, red);
+}
+
+.titleList {
+    font-size: 1rem;
+    font-weight: 800 !important;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.publList {
+    font-size: 1rem;
+    font-weight: 600 !important;
+    color: brown;
+}
+
+img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.alert {
+    margin-top: 116px;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+}
+
+#rowRecipes {
+    margin-top: 30px !important;
+}
+
+.owl-prev,
+.owl-next {
+    display: none !important;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+    color: #FFD700 !important;
+    margin-bottom: 10px !important;
+}
+
+
+/************************************************ End Meal List Styling  *******************************/
+
+
+/************************************************ End Footer Style Sction  *******************************/
+
+.socialMe {
+    cursor: pointer;
+}
+
+.socialMe .fab1:hover {
+    color: #1877f2 !important;
+    transform: translateY(-5px);
+}
+
+.socialMe .fab2:hover {
+    color: #c32aa3!important;
+    transform: translateY(-5px);
+}
+
+.socialMe .fab3:hover {
+    color: #0a66c2 !important;
+    transform: translateY(-5px);
+}
+
+.socialMe .fab4:hover {
+    color: #1da1f2 !important;
+    transform: translateY(-5px);
+}
+
+.socialMe .fab5:hover {
+    color: #fbff003b !important;
+    transform: translateY(-5px);
+}
+
+.socialMe .fab6:hover {
+    color: #4285f4 !important;
+    transform: translateY(-5px);
+}
+
+.socialMe .fab7:hover {
+    color: #25d366!important;
+    transform: translateY(-5px);
+}
+
+.socialMe .svg-inline--fa {
+    color: #ffffff !important;
+    font-size: 15px;
+    transition: all 0.5s linear;
+    margin-left: 5px;
+}
+
+
+/********************************************************* End Footer Style Sction****************************************************/
+
+
+/**********************************************************Start Media Query Responsive*************************************************/
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .col-2,
+    .col-3,
+    .col-4 {
+        flex-basis: 100%;
+    }
+    .TitleMeals {
+        color: blueviolet;
+    }
+}
+
+@media only screen and (max-width: 667px) {
+    .mealTitle {
+        font-size: 35px !important;
+        max-width: 100% !important;
+        cursor: pointer;
+    }
+    .titleList {
+        font-size: 1.5rem;
+        font-weight: 600 !important;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    .publList {
+        font-size: 1.4rem;
+        font-weight: 600 !important;
+        color: brown;
+    }
+    .owlTitle {
+        margin-top: 90px !important;
+        text-align: center;
+        font-size: 45px !important;
+        font-family: 'Anton', sans-serif;
+        letter-spacing: 10px;
+    }
+}
+
+
+/**********************************************************End Media Query Responsive*************************************************/
